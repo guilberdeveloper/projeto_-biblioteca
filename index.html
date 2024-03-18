@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project Book</title>
+</head>
+
+<body>
+    <div class="container_principal">
+        <div class="menu" id="menu">
+            <label>LOGO</label>
+            <button id="btn_modal" class="btn_modal">NEW BOOK</button>
+        </div>
+        <div class="container_book" id="container_book">
+
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adicionar Livro</h2>
+            <form id="myForm">
+                <label for="autor">Autor:</label><br>
+                <input type="text" id="autor" name="autor"><br>
+                <label for="título">Título:</label><br>
+                <input type="text" id="titulo" name="titulo"><br><br>
+                <label for="numeroPaginas">Numero de Paginas:</label><br>
+                <input type="number" id="numeroPaginas" name="numeroPaginas"><br>
+                <label>Status de Leitura:</label><br>
+                <input type="radio" id="lido" name="status_leitura" value="lido">
+                <label for="lido">Lido</label><br>
+                <input type="radio" id="nao_lido" name="status_leitura" value="nao_lido">
+                <label for="nao_lido">Não Lido</label><br><br>
+                <input type="submit" value="ADD NEW BOOK" id="btn_add_new_book">
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
